@@ -18,6 +18,10 @@ def tracking(request, awb):
                 item['location'] = parts[1] + ', ' + parts[2]
                 event_time = datetime.strptime(item['event_time'], '%Y-%m-%d %H:%M')
                 item['event_time'] = event_time.strftime('%d/%m/%Y %I:%M %p').lstrip("0").replace(" 0", " ")
+                if item['message'] == 'Data Received':
+                    item['message'] = 'Order Booked'
+                elif item['message'] == 'Reached At Destination':
+                    item['message'] = 'Reached at Nearest Hub'
         return data
     except:
         data = "Invalid AWB"
