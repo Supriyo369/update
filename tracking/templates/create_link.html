@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <section class="d-flex justify-content-center mt-4">
+      <form id="myForm" method="get">
+        <div class="form-group text-center">
+          <label>AWB</label>
+          <input type="number" class="form-control" id="awb" placeholder="Enter AWB number">
+          <button type="submit" class="text-center btn btn-primary mt-3 btn-block">Track</button>
+        </div>
+      </form>
+    </section>
+    
+  
+    
+
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var formData = document.getElementById("awb").value;
+        var destination = "/tracking/" + encodeURIComponent(formData);
+        window.location.href = destination;
+      });
+      </script>
+
+{% endblock body %}

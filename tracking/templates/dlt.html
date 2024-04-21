@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+   
+   {% block body %}
+
+   <div style="margin-top: 100px;">
+      <div class="container text-center mt-5">
+        <h4>Ship With Supriyo Tracking Page</h4>
+        <span style="font-style: italic;">Your parcel is being shipped by Ship With Supriyo courier service and your parcel is 100% secure with us.</span>
+      </div>
+    </div>
+
+    {% if all_messages != "Invalid AWB" %}
+    <div class="d-flex justify-content-center" style="margin-top: 70px;">
+      <button class="btn btn-primary shadow shadow-lg" onclick="copyURL()">Share tracking link</button>
+    </div>
+    {% endif %}
+    
+      
+        <section class="container">
+          {% if all_messages != "Invalid AWB" %}
+                {% for i in all_messages %}
+                  <div class="row pt-5">
+                      <div class="col">
+                          <img style="height: 25px;" src="/assets/img/icons/goods.png" alt="..." />
+                          &nbsp;
+                          <b id="message">{{ i.message }}</b>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <span class="col">{{ i.location }}, {{ i.event_time }}</span>
+                      {% endfor %}
+                  </div>
+              {% else %}
+                <h5 class="text-center">Invalid AWB or please check after some time.</h5>
+              {% endif %}
+                </section>
+
+
+                <script>
+                  function copyURL() {
+                    var currentURL = window.location.href;
+                    navigator.clipboard.writeText(currentURL)
+                      
+                  }
+                  </script>
+                  
+{% endblock body %}
