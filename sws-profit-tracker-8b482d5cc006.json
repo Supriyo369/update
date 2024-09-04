@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sws-profit-tracker",
+  "private_key_id": "8b482d5cc006cf23d9c3258efe2729033ce4ce5e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC0j92FDa70kByR\nXXs0/nwO8Wb3gtSCpXueBlP1/qacD4DTCc5EFwLgT3FQt98AwmrvXD2weE0z4O43\n3preo2McIx3TIBP7Wnq6Ky6j91slUbfDweT8/7/0wO/wDDVuuPciWxE66pl1fnpy\ntfkS9FBE918c9eSDlghZ2CXUxvhJCzJ0N2DTkb4PjEg0chUvArjgIpZh7MGejvjJ\ne3FQLG+VOQGxj1NxXo5ZImJxac7GIZCM1f46BEfKv5K5Ijezw5FVmgcrlmN8d2av\nIVBNk7D9T82yhtpS1XLyZFwp5ezJDqsDCy+AE1aaN9sUbLWmLJvNH6Ok3LgY7oKH\nrbh4yXSXAgMBAAECggEAEiuEDDajS4MRDOPOWTfevhY22WN2BSun8/AJFPEqTPwW\nZ6ZN9nYmWPJFoezO6SGnZyzuHEsO4dCZyE+DYDIq8BLslmlc+WdSgFeGGwPyTSAb\nEPz7ESafZ37e5lYkLl84p2Foq3geNz+iDNcZGHozda07CgwIkeFQN9JThET9iUQG\nqIHbfDjm2Uy/ebDFJ3tHQBSmbVTwqMb2m8g4HfoOYfltWHqVMV/VocVDCy4M73Gl\nNgcieLyFWAiGxijBE5p9wtp4WTzBOZmcgTpGQB4vdqi12psmXzyZkaKy3dsUo8Kv\nNVqrCVwCaRj3uyTr051wceslii8g4vxHjLf8LM7V4QKBgQDv8wpS3meNiHdxElQg\n2DQT/P7PbXOBQrxgk+v/EnNyxlalt7rUR6X6jGKXN+KBkqVeMePlcigQb06LLJJV\nwNf8JoZzbbNDgBLT1vy3+TglA76+zNQmk0l8VPybbjmlr3Z9ryFc6vuifsJCLdzS\n4Gt2cDvg81vyPsjMNAYqkHHPcQKBgQDAo9vPa4DxhPZMxX1LtP/9w9FtDgo7+7nG\nfUM2iFKcxeLQCxFWDqAfSR+39EZbFBkl/DfVAr8PtAcQ1q67szL0Hhq2Lxz7y198\nBqeVtqo089qO54W2uN8KNV1UkQ26jHskl6eB60Pi9KCdDLuiUKHlTOmuiMvrne9s\nxKGAwa4QhwKBgBI1Igppv/fYbB/TYTjgzwrZPsikqIgddUfq0ZSYZNRHwplumKm1\nCh45+t04q2Jjq1K7fGyTvgCJQa+D4VLKgFks3zTxFRJBLKyQerrHGYCNiTLXPh3z\nPTdHB6gPtCYja11cJa70UcXh0oHNEx2ZU+431ANc1BRMuVXteK5QKaKxAoGBAKcb\nvatx81oP4GT6kFVjPwnQm1SB8GjWVfKUaQDeQuPSWY3le/VuHILnOQendHy/s40a\n/QfgKQOjRNnbkZorulC/6KYPupHGex8o2qlp2r6ypu5+cqTuPDUr07lvVzxzbsNw\ndxOhlbNESCvUhtQoJDi4fqIz8smCqNZuwDbkTG3zAoGBALMYe1Bs+2WJZPKay8p1\nFfCQ+OEIOrCqgfOqq/mhUfMVAgI3VvsXMlDBvlPv8zyVPZaERnbmotNC8lBmUtQa\ndyt418489rc7PUfJ242M0xtCx03C/15XAeym6tBBelK1K/jwjfg0SzzvmiAIEIl7\n4qpnqzJjx7ut2cMY8FRJ1a8f\n-----END PRIVATE KEY-----\n",
+  "client_email": "sws-profit-tracker@sws-profit-tracker.iam.gserviceaccount.com",
+  "client_id": "109339605353674547388",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sws-profit-tracker%40sws-profit-tracker.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
