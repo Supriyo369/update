@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Ship With Supriyo</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://shipwithsupriyo.netlify.app/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://shipwithsupriyo.netlify.app/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://shipwithsupriyo.netlify.app/assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://shipwithsupriyo.netlify.app/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="https://shipwithsupriyo.netlify.app/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="https://shipwithsupriyo.netlify.app/assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://shipwithsupriyo.netlify.app/assets/css/theme.css" rel="stylesheet" />
+
+
+    <script src="https://shipwithsupriyo.netlify.app/vendors/@popperjs/popper.min.js"></script>
+    <script src="https://shipwithsupriyo.netlify.app/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="https://shipwithsupriyo.netlify.app/vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="https://shipwithsupriyo.netlify.app/vendors/fontawesome/all.min.js"></script>
+    <script src="https://shipwithsupriyo.netlify.app/assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    </body>
+
+
+
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="/"><img src="https://shipwithsupriyo.netlify.app/assets/img/gallery/logo.png" height="45" alt="logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+              {% if user.is_authenticated %}
+                <li class="nav-item px-2"><a class="nav-link" href="/dashboard/">Dashboard</a></li>
+              {% else %}
+                <li class="nav-item px-2"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="/#testimonials">Testimonials</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="/tracking/create-link/">Track</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="/tracking/pin-check/">Check Delivery Pincode</a></li>
+                <li class="nav-item px-2 mb-3"><a class="nav-link" href="/login/">Seller Login</a></li>
+                </ul>
+                <div class="dropdown d-none d-lg-block">
+                  
+                  
+                </div><a class="btn btn-primary order-1 order-lg-0 ms-lg-3" target="_blank" href=" https://wa.me/918597861168?text=I%20came%20from%20your%20website%20and%20I%20want%20to%20try%20your%20service">Contact Us</a>
+              {% endif %}
+          </div>
+        </div>
+      </nav>
+
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-xl-6 col-xxl-7 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="https://shipwithsupriyo.netlify.app/assets/img/illustrations/hero.png" alt="hero-header" /></div>
+            <div class="col-md-75 col-xl-6 col-xxl-5 text-md-start text-center py-8">
+              <h1 class="fw-normal fs-6 fs-xxl-7">The trusted provider of </h1>
+              <h1 class="fw-bolder fs-6 fs-xxl-7 mb-2" style="font-style: italic;">Xpressbees courier with Cash On Delivery service.</h1>
+              <p class="fs-1 mb-5">We deliver your products with Xpressbees <br/>safely to your customer's doorstep in 2-5 days. </p><a class="btn btn-primary me-2 shadow-lg" target="_blank" href=" https://wa.me/918597861168?text=I%20came%20from%20your%20website%20and%20I%20want%20to%20try%20your%20service" role="button">Get started<i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-7" id="services" container-xl="container-xl">
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5 text-center mb-3">
+              <h5 class="text-danger">SERVICES</h5>
+              <h2>Our services for you</h2>
+            </div>
+          </div>
+          <div class="row h-100 justify-content-center">
+            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
+              <div class="card shadow border h-100 px-lg-5 card-span">
+                <div class="card-body d-flex flex-column justify-content-around">
+                  <div class="text-center pt-5"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/services-1.svg" alt="..." />
+                    <h5 class="my-4" style="font-style: italic;">Home Pickup</h5>
+                  </div>
+                  <p>Offering Home Pickup in all over India.</p>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Within 24 hours pickup
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Pan India service
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Hasslefree
+                    </li>
+                  </ul>
+                  <div class="text-center my-5">
+                    <div class="d-grid">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
+              <div class="card shadow border h-100 px-lg-5 card-span">
+                <div class="card-body d-flex flex-column justify-content-around">
+                  <div class="text-center pt-5"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/services-2.svg" alt="..." />
+                    <h5 class="my-4" style="font-style: italic;">Tracking</h5>
+                  </div>
+                  <p>Track your parcel in a click of a button</p>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Get AWB number instantly
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Track from our website
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>24 hours support
+                    </li>
+                  </ul>
+                  <div class="text-center my-5">
+                    <div class="d-grid">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 pt-4 px-md-2 px-lg-3">
+              <div class="card shadow border h-100 px-lg-5 card-span">
+                <div class="card-body d-flex flex-column justify-content-around">
+                  <div class="text-center pt-5"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/services-3.svg" alt="..." />
+                    <h5 class="my-4" style="font-style: italic;">Cash On Delivery</h5>
+                  </div>
+                  <p>Yes! We offer cash On Delivey service.</p>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Trusted by 585+ vendors
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>On time delivery
+                    </li>
+                    <li class="mb-2"><span class="me-2"><i class="fas fa-circle text-primary" style="font-size:.5rem"></i></span>Get amount within 10 days
+                    </li>
+                  </ul>
+                  <div class="text-center my-5">
+                    <div class="d-grid">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      <section class="py-7" container-xl="container-xl">
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5 text-center mb-3">
+              <h5 class="text-danger">PRICING</h5>
+              <h2>Our pricing for you</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Pricing section -->
+
+        <section>
+          <div class="container table-responsive py-5"> 
+            <table class="table table-bordered shadow" id="pricing" style="border: black; text-align: center; vertical-align: middle;">
+              <thead class="thead-dark">
+                <tr style="background-color: #ffd98e; vertical-align: middle;">
+                  <th scope="col" style="padding: 20px;">Weight</th>
+                  <th scope="col">Within State</th>
+                  <th scope="col">Other than your State</th>
+                  <th scope="col">COD Charge</th>
+                </tr>
+              </thead>
+              <tbody style="background-color: #ffe8bb;">
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">1 gm - 500 gm</th>
+                  <td>Rs 45</td>
+                  <td>Rs 65</td>
+                  <td rowspan="6">Flat Rs 50 upto COD amount of Rs 3,000 and after that, 2% of the COD amount</td>
+                </tr>
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">500 gm - 1 Kg</th>
+                  <td>Rs 72</td>
+                  <td>Rs 115</td>
+                </tr>
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">1 Kg - 2 Kg</th>
+                  <td colspan="2" rowspan="4">Please contact us for above 1 Kg parcels<br></td>
+                </tr>
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">2 Kg - 5 Kg</th>
+                </tr>
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">5 Kg - 10 Kg</th>
+                </tr>
+                <tr style="font-family: sans-serif;">
+                  <th scope="row" style="padding: 20px;">10 Kg - 25 Kg</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      
+        <div class="container text-center">
+          <section>
+            <h4 style="font-style: italic;">
+              Book through website: Coming soon...
+            </h4>
+          </section>
+        </div>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-7 pb-0">
+
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-6 col-lg mb-5">
+              <div class="text-center"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/states.png" alt="..." />
+                <h1 class="text-primary mt-4">West Bengal</h1>
+                <h5 class="text-800">Suri, Birbhum, West Bengal</h5>
+              </div>
+            </div>
+            <div class="col-6 col-lg mb-5">
+              <div class="text-center"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/clients.png" alt="..." />
+                <h1 class="text-primary mt-4">95+</h1>
+                <h5 class="text-800">Happy clients</h5>
+              </div>
+            </div>
+            <div class="col-6 col-lg mb-5">
+              <div class="text-center"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/goods.png" alt="..." />
+                <h1 class="text-primary mt-4">2,252+</h1>
+                <h5 class="text-800">Parcels delivered</h5>
+              </div>
+            </div>
+            <div class="col-6 col-lg mb-5">
+              <div class="text-center"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/business.png" alt="..." />
+                <h1 class="text-primary mt-4">28,000+</h1>
+                <h5 class="text-800">Field sevice representatives</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+      
+      <!-- <section> begin ============================-->
+      <section class="py-7" id="testimonials">
+
+        <div class="container-fluid">
+          <div class="row flex-center">
+            <div class="bg-holder bg-size" style="background-image:url(https://shipwithsupriyo.netlify.app/assets/img/gallery/quote.png);background-position:top;background-size:auto;margin-left:-270px;margin-top:-45px;">
+            </div>
+            <!--/.bg-holder-->
+
+            <div class="col-md-8 col-lg-5 text-center">
+              <h5 class="text-danger">TESTIMONIAL</h5>
+              <h2>Our Awesome Clients</h2>
+            </div>
+          </div>
+          <div class="carousel slide pt-6" id="carouselExampleDark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="row h-100">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Swift Solutions for Garment Businesses!"</h5>
+                        <p class="card-text pt-3">"Exceptional service! Our business relies heavily on timely deliveries, and Supriyo has consistently exceeded our expectations. Thank you for contributing to the success of our business."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Kolika.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Kolika Mondal</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Cheap and reliable service in the market"</h5>
+                        <p class="card-text pt-3">"I've been using Ship With Supriyo courier services for over a year now, and I am extremely satisfied. The packages always arrive on time, and tracking system keeps me informed every step of the way."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Modhumita.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Modhumita Dasgupta</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Top in the market. Kudus to Supriyo"</h5>
+                        <p class="card-text pt-3">"As a small business owner, finding a reliable courier service was crucial. Ship With Supriyo not only provides affordable rates but also delivers a level of customer service that goes above and beyond. I appreciate the personal attention and care given to each shipment."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Santanu.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Santanu Acharyya</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row h-100">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Very fast and reliable"</h5>
+                        <p class="card-text pt-3">"I shop online frequently, and your courier service has consistently delivered my packages promptly. The real-time tracking is a game-changer, and the delivery staff is always courteous. It's reassuring to know my purchases are in good hands."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Mohona.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Mohona Chatterjee</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Cheap and the best service in the market"</h5>
+                        <p class="card-text pt-3">"Ship with Supriyo has elevated our home decor deliveries. Their personalized service and careful handling of fragile items ensure that each piece arrives intact and ready to beautify our customers' homes. Highly recommended!"</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Komolika.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Komolika Biswas</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Supriyo - Your Partner in Reliability!"</h5>
+                        <p class="card-text pt-3">"Reliability is the key to our business, and Ship with Supriyo is a trustworthy partner. Their professionalism and commitment to meeting deadlines have made them an integral part of our supply chain. A dependable choice for small businesses."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Lokesh.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Lokesh Sharma</h6>
+                              <p class="fs--2 fw-normal mb-0">Chief Executive, DLF</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row h-100">
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Speed Meets Efficiency with Ship With Supriyo!"</h5>
+                        <p class="card-text pt-3">"In the world of fast-paced business, Ship with Supriyo stands out. Their speedy deliveries and efficient service have become a game-changer for my operations. A reliable courier partner that understands the need for speed." </p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Soumik.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Soumik Hazra</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Friendly Service, Fast Deliveries - Thanks, Supriyo!"</h5>
+                        <p class="card-text pt-3">"Ship with Supriyo goes beyond just deliveries. Their friendly customer support and efficient service make the entire experience enjoyable. It's a pleasure doing business with a company that values relationships as much as shipments." </p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Rohit.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Rohit Kumar</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card h-100 card-span p-3">
+                      <div class="card-body">
+                        <h5 class="mb-0 text-primary">"Gadget Galore - Delivered with Precision!"</h5>
+                        <p class="card-text pt-3">"Ship with Supriyo is our trusted partner for gadget shipments. The attention to detail and secure handling of delicate electronics speak volumes about their commitment to excellence."</p>
+                        <div class="d-xl-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center mb-3"><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i><i class="fas fa-star text-primary me-1"></i></div>
+                          <div class="d-flex align-items-center"><img class="img-fluid" src="https://shipwithsupriyo.netlify.app/assets/img/icons/Rajesh.png" alt="" />
+                            <div class="flex-1 ms-3">
+                              <h6 class="mb-0 fs--1 text-1000 fw-medium">Rajesh Gupta</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row px-3 px-md-0 mt-6">
+              <div class="col-12 position-relative">
+                <ol class="carousel-indicators">
+                  <li class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"></li>
+                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      
+
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="findUs">
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-5 mb-6 text-center">
+              <div class="text-center">
+                <button class="btn btn-primary px-5 shadow-lg" type="submit"><i class="fas fa-phone-alt me-2"></i><a class="text-light" href="tel:8597861168">Call us to know more</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 bg-1000">
+
+        <div class="container">
+          <div class="row justify-content-md-between justify-content-evenly py-4">
+            <div class="text-center">
+              <p class="fs--1 my-2 fw-bold text-200">All rights Reserved &copy; Ship With Supriyo. 2024</p>
+              <a target="_blank" href="https://www.facebook.com/ship.with.supriyo/"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/fb.png"width="22" height="22"></a> 
+              <a style="padding-left: 2%;" target="_blank" href="https://www.instagram.com/ship_with_supriyo/"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/insta.png"width="22" height="22"></a> 
+              <a style="padding-left: 2%;" target="_blank" href="https://wa.me/918597861168?text=I%20came%20from%20your%20website%20and%20I%20want%20to%20try%20your%20service"><img src="https://shipwithsupriyo.netlify.app/assets/img/icons/wp.png"width="22" height="22"></a> 
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    
+
+</html>
